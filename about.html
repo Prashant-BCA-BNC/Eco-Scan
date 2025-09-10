@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EcoScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #F2F9F4; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Main Container -->
+    <div id="app-container" class="min-h-screen flex flex-col">
+
+        <!-- Header -->
+        <header class="p-4 md:p-6 flex justify-between items-center relative">
+            <a href="index.html" class="flex items-center space-x-2">
+                <!-- SVG Logo Option 1: Leaf Barcode -->
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,95C25,95 10,75 10,50C10,25 25,5 50,5C75,5 90,25 90,50C90,75 75,95 50,95Z" fill="#E8F5E9"/>
+                    <path d="M50,5 C75,5 90,25 90,50 C90,75 75,95 50,95 C40,95 30,90 22,82" stroke="#2C7A4B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="30" y="30" width="5" height="40" fill="#2C7A4B" rx="2.5"/>
+                    <rect x="40" y="30" width="8" height="40" fill="#2C7A4B" rx="4"/>
+                    <rect x="53" y="30" width="4" height="40" fill="#2C7A4B" rx="2"/>
+                    <rect x="62" y="30" width="6" height="40" fill="#2C7A4B" rx="3"/>
+                    <rect x="73" y="30" width="5" height="40" fill="#2C7A4B" rx="2.5"/>
+                </svg>
+                <span class="text-2xl font-bold text-green-800">EcoScan</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-600 font-semibold">
+                <a href="index.html" class="hover:text-green-600">Home</a>
+                <a href="about.html" class="text-green-600 font-bold">About Us</a>
+                <a href="feedback.html" class="hover:text-green-600">Feedback</a>
+                <a href="login.html" class="ml-4 bg-green-100 text-green-800 px-5 py-2 rounded-full font-bold hover:bg-green-200 transition">Login / Signup</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden"><button id="mobile-menu-btn" class="text-gray-800 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </header>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-20 right-4 rounded-lg w-48 z-50">
+            <a href="index.html" class="mobile-menu-link block px-4 py-2 text-gray-600 hover:bg-green-50">Home</a>
+            <a href="about.html" class="mobile-menu-link block px-4 py-2 text-green-600 font-bold hover:bg-green-50">About Us</a>
+            <a href="feedback.html" class="mobile-menu-link block px-4 py-2 text-gray-600 hover:bg-green-50">Feedback</a>
+            <a href="login.html" class="mobile-menu-link block px-4 py-3 text-center bg-green-100 text-green-800 font-bold m-2 rounded-lg hover:bg-green-200">Login / Signup</a>
+        </div>
+
+        <!-- Dynamic Content Area -->
+        <main class="flex-grow flex items-center justify-center p-4">
+            <section class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-4xl mx-auto my-12">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-green-800">About EcoScan</h2>
+                    <p class="mt-2 text-lg text-gray-600">Creating a generation of Sustainably Informed Consumers.</p>
+                </div>
+
+                <div class="mt-10 text-gray-700 space-y-6">
+                    <h3 class="text-2xl font-semibold text-green-700">Our Mission</h3>
+                    <p>In a world full of choices, making the right one for the planet can be confusing. Misleading labels and complex recycling rules often leave well-intentioned consumers feeling powerless. EcoScan was born from a simple idea: what if everyone could have instant, clear, and actionable information about a product's environmental impact right in their pocket?</p>
+                    <p>Our mission is to demystify sustainability. We empower you to make conscious choices by providing two simple scores—a Waste Score for packaging quantity and a Recyclability Score based on the practical realities of India's recycling infrastructure. We want to turn every shopping trip into an opportunity to make a positive impact.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-green-700">How It Works</h3>
+                    <p>EcoScan operates on a simple "Scan → Score → Act" model. By scanning any product's barcode, you get immediate feedback. But we don't just give you data; we give you a plan. Our actionable suggestions help you reduce waste, find creative ways to reuse packaging, and recycle correctly. Every action's impact is quantified, showing you the tangible difference you're making.</p>
+
+                    <h3 class="text-2xl font-semibold text-green-700">Join Our Community</h3>
+                    <p>Our database is built by and for the community. If you scan a product that isn't in our system, you can quickly submit it. This collaborative approach ensures we are always growing and focusing on the products that matter most to you. Together, we can build a comprehensive guide to sustainable consumption in India and drive real change—one scan at a time.</p>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="bg-green-800 text-white text-center p-6">
+            <p>&copy; 2025 EcoScan. Helping create Sustainably Informed Consumers.</p>
+        </footer>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
